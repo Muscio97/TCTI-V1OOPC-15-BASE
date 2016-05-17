@@ -61,7 +61,7 @@ void create_screen( int xsize, int ysize ){
 	hwnd = CreateWindowEx(
 	    WS_EX_CLIENTEDGE,
 		"WindowClass",
-		"LCD Window",
+		"Hacking...",
 		WS_VISIBLE | WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, /* x */
 		CW_USEDEFAULT, /* y */

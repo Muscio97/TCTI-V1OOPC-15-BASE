@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="example code" Database="">
-  <Project Name="05-07-rectangle" Path="05-07-rectangle/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="05-07-rectangle" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
-  <Project Name="05-09-window" Path="05-09-window/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="05-09-window" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
   <Project Name="05-01-xyxy" Path="05-01-xyxy/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="05-01-xyxy" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="05-04-constructor" Path="05-04-constructor/_codelite.project" Active="No"/>
+  <Project Name="05-02-struct" Path="05-02-struct/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="05-04-constructor" ConfigName="Release"/>
+      <Project Name="05-02-struct" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="05-03-print" Path="05-03-print/_codelite.project" Active="No"/>
@@ -30,10 +18,10 @@
       <Project Name="05-03-print" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="05-02-struct" Path="05-02-struct/_codelite.project" Active="No"/>
+  <Project Name="05-04-constructor" Path="05-04-constructor/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="05-02-struct" ConfigName="Release"/>
+      <Project Name="05-04-constructor" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="05-05-private" Path="05-05-private/_codelite.project" Active="No"/>
@@ -48,16 +36,22 @@
       <Project Name="05-06-class" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
+  <Project Name="05-07-rectangle" Path="05-07-rectangle/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="05-07-rectangle" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
   <Project Name="05-08-add" Path="05-08-add/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="05-08-add" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="08-01-separate" Path="08-01-separate/_codelite.project" Active="No"/>
+  <Project Name="05-09-window" Path="05-09-window/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="08-01-separate" ConfigName="Release"/>
+      <Project Name="05-09-window" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="06-template" Path="06-template/_codelite.project" Active="No"/>
@@ -66,16 +60,10 @@
       <Project Name="06-template" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="14-01-array-clear" Path="14-01-array-clear/_codelite.project" Active="No"/>
+  <Project Name="07-01-by-value" Path="07-01-by-value/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="14-01-array-clear" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
-  <Project Name="14-02-array-check" Path="14-02-array-check/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="14-02-array-check" ConfigName="Release"/>
+      <Project Name="07-01-by-value" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="07-02-const-error" Path="07-02-const-error/_codelite.project" Active="No"/>
@@ -84,28 +72,22 @@
       <Project Name="07-02-const-error" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="14-07-auto" Path="14-07-auto/_codelite.project" Active="No"/>
+  <Project Name="07-03-pass-const" Path="07-03-pass-const/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="14-07-auto" ConfigName="Release"/>
+      <Project Name="07-03-pass-const" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="14-04-for-clear" Path="14-04-for-clear/_codelite.project" Active="No"/>
+  <Project Name="07-04-const-reference" Path="07-04-const-reference/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="14-04-for-clear" ConfigName="Release"/>
+      <Project Name="07-04-const-reference" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="14-03-for-sum" Path="14-03-for-sum/_codelite.project" Active="No"/>
+  <Project Name="08-01-separate" Path="08-01-separate/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="14-03-for-sum" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
-  <Project Name="07-01-by-value" Path="07-01-by-value/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="07-01-by-value" ConfigName="Release"/>
+      <Project Name="08-01-separate" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="08-02-vector-get-set" Path="08-02-vector-get-set/_codelite.project" Active="No"/>
@@ -118,30 +100,6 @@
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="08-03-vector-public" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
-  <Project Name="08-07-two-constructors" Path="08-07-two-constructors/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="08-07-two-constructors" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
-  <Project Name="11-01-asserts" Path="11-01-asserts/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="11-01-asserts" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
-  <Project Name="11-02-operator==" Path="11-02-operator==/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="11-02-operator==" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
-  <Project Name="12-01-doxygen" Path="12-01-doxygen/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="12-01-doxygen" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="08-04-add" Path="08-04-add/_codelite.project" Active="No"/>
@@ -160,6 +118,12 @@
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="08-06-three-adds" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="08-07-two-constructors" Path="08-07-two-constructors/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="08-07-two-constructors" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="08-08-default-zero" Path="08-08-default-zero/_codelite.project" Active="No"/>
@@ -210,16 +174,16 @@
       <Project Name="10-02-vector" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="07-03-pass-const" Path="07-03-pass-const/_codelite.project" Active="No"/>
+  <Project Name="11-01-asserts" Path="11-01-asserts/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="07-03-pass-const" ConfigName="Release"/>
+      <Project Name="11-01-asserts" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="07-04-const-reference" Path="07-04-const-reference/_codelite.project" Active="No"/>
+  <Project Name="11-02-operator==" Path="11-02-operator==/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="07-04-const-reference" ConfigName="Release"/>
+      <Project Name="11-02-operator==" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="11-03-catch" Path="11-03-catch/_codelite.project" Active="No"/>
@@ -246,10 +210,46 @@
       <Project Name="11-06-stringstream" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
+  <Project Name="12-01-doxygen" Path="12-01-doxygen/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="12-01-doxygen" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
   <Project Name="13-01-rational" Path="13-01-rational/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="13-01-rational" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="14-01-array-clear" Path="14-01-array-clear/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="14-01-array-clear" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="14-02-array-check" Path="14-02-array-check/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="14-02-array-check" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="14-03-for-sum" Path="14-03-for-sum/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="14-03-for-sum" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="14-04-for-clear" Path="14-04-for-clear/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="14-04-for-clear" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="14-07-auto" Path="14-07-auto/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="14-07-auto" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
   <Project Name="15-01-separate" Path="15-01-separate/_codelite.project" Active="No"/>
@@ -294,22 +294,34 @@
       <Project Name="15-07-drawable" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
-  <Project Name="15-09-walls" Path="15-09-walls/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="15-09-walls" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix> 
   <Project Name="15-08-abstract" Path="15-08-abstract/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="15-08-abstract" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
+  <Project Name="15-09-walls" Path="15-09-walls/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="15-09-walls" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
   <Project Name="15-10-bounce" Path="15-10-bounce/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="15-10-bounce" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="Opdracht_1_1" Path="Opdracht_1_1/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Opdracht_1_1" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix> 
+  <Project Name="Opdracht_1_2" Path="Opdracht_1_2/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Opdracht_1_2" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix> 
 </CodeLite_Workspace>
