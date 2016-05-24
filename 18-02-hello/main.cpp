@@ -16,7 +16,8 @@ int main( void ){
       hwlib::wait_ms( 1000 );
       hwlib::cout 
          << hwlib::left << hwlib::setw( 5 ) << i 
-         << " Hello world\n";  
+         << " seconds have passed\n";  
+    
    }   
    
 }

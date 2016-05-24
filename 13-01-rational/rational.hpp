@@ -1,6 +1,7 @@
 #ifndef RATIONAL_HPP
 #define RATIONAL_HPP
-
+#include <iomanip>
+#include "iostream"
 /// @file
 
 /// rational ADT
@@ -41,7 +42,7 @@ public:
    /// with just a whole value.
    rational( int counter, int denominator = 1 ):
      counter( counter ), denominator( denominator )
-   {}
+   {reduce();}
    
    /// compare two rational values
    //
@@ -49,7 +50,7 @@ public:
    /// if and only if the counter and denminator of both
    /// operands are equal.
    bool operator==( const rational & rhs ) const {
-      return ( counter == rhs.counter ) || ( denominator == rhs.denominator );
+      return ( counter == rhs.counter ) && ( denominator == rhs.denominator );
    }
 
    /// output operator for a rational value
@@ -57,20 +58,38 @@ public:
    /// This operator<< prints a constructor in the format
    /// [counter/denominator] where both values are printed as
    /// decimal values.
-   friend std::ostream & operator<<( std::ostream & lhs, const rational & rhs ){
+  /* friend std::ostream & operator<<( std::ostream & lhs, const rational & rhs ){
       return lhs 
          << "[" 
          << rhs.counter 
          << "/" 
          << rhs.denominator
-         << "}";
+         << "]";// changed from "}" to "]"
    }   
+   */
+      friend std::ostream & operator<<( std::ostream & lhs, const rational & rhs ){
+        lhs 
+         << std::hex
+         << std::showbase
+         << std::internal
+         << "[" 
+         << std::setfill('0') << std::setw(6) << rhs.counter 
+         << "/" 
+         << std::setw(6) << rhs.denominator
+         << "]"
+         << std::noshowbase; 
+      return lhs ;
+
+         
+
+   }   
+   
    
    /// multiply a rational by an integer
    //
    /// This operator* multiplies a rational value by an integer value.
    rational operator*( const int rhs ) const {
-      return rational( counter * rhs, denominator * rhs );
+      return rational( counter * rhs, denominator);
    }
    
    /// multiply a rational by a rational
@@ -78,8 +97,9 @@ public:
    /// This operator* multiplies a rational value by a rational value.
    rational operator*( const rational & rhs ) const {
       return rational( 
-         denominator * rhs.denominator,
-         counter * rhs.counter
+         counter * rhs.counter,
+         denominator * rhs.denominator
+        
       );
    }
    
@@ -94,12 +114,11 @@ public:
    }
    
    rational operator*=( const rational & rhs ){
-      counter = counter + rhs.counter;
-      denominator += rhs.denominator;
+      counter = counter * rhs.counter;
+      denominator = denominator * rhs.denominator;
       reduce();
-      return rhs;
+      return *this;
    }
-   
 };
 
 #endif

@@ -16,7 +16,7 @@ int main( void ){
    PMC->PMC_PCER0 = ( 0x3F << 11 );   
    
    // make the GPIO pin an output
-   PIOB->PIO_OER = 0x01 << 27;
+   PIOB->PIO_OER = 0x01 << 24;
    
    for(;;){
          
@@ -24,12 +24,12 @@ int main( void ){
       if (( PIOC->PIO_PDSR & ( 0x01 << 23 )) == 0 ){
          
          // make the GPIO pin high
-         PIOB->PIO_SODR = 0x01 << 27;
+         PIOB->PIO_SODR = 0x01 << 24;
          
       } else {
          
          // make the GPIO pin low
-         PIOB->PIO_CODR = 0x01 << 27;
+         PIOB->PIO_CODR = 0x01 << 24;
          
       }
    } 

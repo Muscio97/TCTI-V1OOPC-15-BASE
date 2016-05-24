@@ -19,12 +19,12 @@ int main( void ){
    auto led3 = hwlib::target::pin_out( hwlib::target::pins::d4 );
    
    for(;;){
-      led0.set( 1 ); hwlib::wait_ms( 80 ); led0.set( 0 ); 
-      led1.set( 1 ); hwlib::wait_ms( 80 ); led1.set( 0 ); 
-      led2.set( 1 ); hwlib::wait_ms( 80 ); led2.set( 0 ); 
-      led3.set( 1 ); hwlib::wait_ms( 80 ); led3.set( 0 ); 
-      led2.set( 1 ); hwlib::wait_ms( 80 ); led2.set( 0 ); 
-      led1.set( 1 ); hwlib::wait_ms( 80 ); led1.set( 0 ); 
+      led0.set( 1 ); hwlib::wait_ms( 120 ); led0.set( 0 ); 
+      led1.set( 1 ); hwlib::wait_ms( 120 ); led1.set( 0 ); 
+      led2.set( 1 ); hwlib::wait_ms( 120 ); led2.set( 0 ); 
+      led3.set( 1 ); hwlib::wait_ms( 120 ); led3.set( 0 ); 
+      led2.set( 1 ); hwlib::wait_ms( 120 ); led2.set( 0 ); 
+      led1.set( 1 ); hwlib::wait_ms( 120 ); led1.set( 0 ); 
    }
 }
 

@@ -34,7 +34,7 @@ int main(int argc, char **argv){
    line diagonal_line( 10, 10, 40, 20 );
    diagonal_line.print();
    
-   diagonal_line.shift( 50, 5 );
+   diagonal_line.shift( 5, 50 );
    diagonal_line.print();
    
    return 0;

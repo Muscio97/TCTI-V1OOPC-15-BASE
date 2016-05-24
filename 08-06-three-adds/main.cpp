@@ -23,5 +23,5 @@ int main(int argc, char **argv){
    z = x + y;
    // z = x + b;    // compilation error
    
-   return 0;
+   return c;
 }
