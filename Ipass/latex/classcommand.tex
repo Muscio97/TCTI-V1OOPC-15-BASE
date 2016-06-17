@@ -1,0 +1,59 @@
+\hypertarget{classcommand}{}\section{command Class Reference}
+\label{classcommand}\index{command@{command}}
+
+
+Command contains a function that sends data to the \hyperlink{class_m_a_x7219}{M\+A\+X7219} thru S\+PI.  
+
+
+
+
+{\ttfamily \#include $<$command.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries command} (hwlib\+::spi\+\_\+bus \&bus, hwlib\+::pin\+\_\+out \&cs, byte($\ast$data)\mbox{[}8\mbox{]}\mbox{[}2\mbox{]}, int \&mode, int \&time, int \&number\+\_\+of\+\_\+matrices, int \&count, int \&string\+\_\+lenght)\hypertarget{classcommand_ad0e013b59d77a5be8e2f86c4e3cb13c0}{}\label{classcommand_ad0e013b59d77a5be8e2f86c4e3cb13c0}
+
+\item 
+void \hyperlink{classcommand_a1559447538e976b00620f91d811061e7}{commander} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Command contains a function that sends data to the \hyperlink{class_m_a_x7219}{M\+A\+X7219} thru S\+PI. 
+
+Commander gets a 3d list( ($\ast$data)\mbox{[}8\mbox{]}\mbox{[}2\mbox{]} ). Command uses 3 for loops to read out the list. First loop is with letter out of the list will be displayed. ~\newline
+Second loop is for getting the data per row. ~\newline
+Final loop is for the amount of matrices. ~\newline
+It makes it posseble to grap the last(or next) letter out of the data input. ~\newline
+ 
+
+\subsection{Member Function Documentation}
+\index{command@{command}!commander@{commander}}
+\index{commander@{commander}!command@{command}}
+\subsubsection[{\texorpdfstring{commander()}{commander()}}]{\setlength{\rightskip}{0pt plus 5cm}void command\+::commander (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classcommand_a1559447538e976b00620f91d811061e7}{}\label{classcommand_a1559447538e976b00620f91d811061e7}
+-\/bus is spi bus. ~\newline
+-\/cs is spi cs. ~\newline
+-\/render\+\_\+input is the data that will be displayed on the matrix. ~\newline
+-\/time is the time(in ms) that the matrix will be displayed. ~\newline
+-\/mode is the modes the matrix will be dysplayed in. ~\newline
+-\/inverd is whether the data is inverder or not. 0 is off, !0 is on. ~\newline
+-\/rotation is the number of times render\+\_\+input will be rotated 90 degeers. ~\newline
+-\/number\+\_\+of\+\_\+matrices the number of matrices where you want to display on. ~\newline
+-\/count number of size of martix in pixels. ~\newline
+-\/string\+\_\+lenght the lenght of the string you want to display. ~\newline
+ ~\newline
+ Modes\+:
+\begin{DoxyEnumerate}
+\item flashing
+\item shifting right to left
+\item shifting left to right 
+\end{DoxyEnumerate}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+command.\+hpp\end{DoxyCompactItemize}

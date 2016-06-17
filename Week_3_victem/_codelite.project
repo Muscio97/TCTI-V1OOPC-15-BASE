@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="Week_3_victim" InternalType="Console">
+<CodeLite_Project Name="Week_3_victem" InternalType="Console">
   <Plugins>
     <Plugin Name="qmake">
       <![CDATA[00010001N0005Debug000000000000]]>
@@ -35,12 +35,12 @@
     <File Name="rectangle.hpp"/>
     <File Name="vector.cpp"/>
     <File Name="vector.hpp"/>
+    <File Name="victim.cpp"/>
+    <File Name="victim.hpp"/>
     <File Name="wall.cpp"/>
     <File Name="wall.hpp"/>
     <File Name="window.cpp"/>
     <File Name="window.hpp"/>
-    <File Name="victim.hpp"/>
-    <File Name="victim.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

@@ -11,7 +11,6 @@ Filled_Rectangle::Filled_Rectangle(window & w, int start_x, int start_y, int end
     {}
 
 void Filled_Rectangle::print(){
-  
     for(int x = start_x; x < end_x; x++)
     {
         for(int y = start_y; y < end_y; y++)
@@ -19,11 +18,7 @@ void Filled_Rectangle::print(){
             
                 w.draw(vector(x,y));
         }
-        
-        
     }
-        
-
 }
 
 

@@ -1,0 +1,46 @@
+\hypertarget{classdummy}{}\section{dummy Class Reference}
+\label{classdummy}\index{dummy@{dummy}}
+
+
+Dummy contains a copy function.  
+
+
+
+
+{\ttfamily \#include $<$dummy.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries dummy} (byte($\ast$data\+\_\+input)\mbox{[}8\mbox{]}, byte($\ast$matrix\+\_\+dummy)\mbox{[}8\mbox{]}, int count)\hypertarget{classdummy_a73977fc0bcfacf1fd7438be2aa73684a}{}\label{classdummy_a73977fc0bcfacf1fd7438be2aa73684a}
+
+\item 
+void \hyperlink{classdummy_a6cfdc11e8b2c00ec0f929eb8b9c225d6}{copier} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dummy contains a copy function. 
+
+Copier is a function that creates a non const matrix(matrix\+\_\+dummy) from data(data\+\_\+input). ~\newline
+The advantage of this is that your orginal data won\textquotesingle{}t be altert. ~\newline
+Example\+: You want to render Hello, but you want it rotated 90\textbackslash{}370. if you send you orginal matrix, it will be rotated. ~\newline
+Then displayed, but then rotated again and then displayed. Copy would be send, rotated, displayed. ~\newline
+ The a other copy will be made and send, rotated, displayed 
+
+\subsection{Member Function Documentation}
+\index{dummy@{dummy}!copier@{copier}}
+\index{copier@{copier}!dummy@{dummy}}
+\subsubsection[{\texorpdfstring{copier()}{copier()}}]{\setlength{\rightskip}{0pt plus 5cm}void dummy\+::copier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classdummy_a6cfdc11e8b2c00ec0f929eb8b9c225d6}{}\label{classdummy_a6cfdc11e8b2c00ec0f929eb8b9c225d6}
+-\/data\+\_\+input is the data that will be copyed. ~\newline
+-\/matrix\+\_\+data is the copy. ~\newline
+-\/count\+: Size of matrix in pixels. ~\newline
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dummy.\+hpp\end{DoxyCompactItemize}

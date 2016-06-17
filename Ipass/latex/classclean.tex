@@ -1,0 +1,44 @@
+\hypertarget{classclean}{}\section{clean Class Reference}
+\label{classclean}\index{clean@{clean}}
+
+
+Clean contains a cleaner funcion.  
+
+
+
+
+{\ttfamily \#include $<$clean.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries clean} (hwlib\+::spi\+\_\+bus \&bus, hwlib\+::pin\+\_\+out \&cs, int number\+\_\+of\+\_\+matrices, int count)\hypertarget{classclean_ad234a2d93c7ca223f1875f25f99294f8}{}\label{classclean_ad234a2d93c7ca223f1875f25f99294f8}
+
+\item 
+void \hyperlink{classclean_a9c834bca386f25dc1a9ccbbc0a8835a8}{cleaner} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clean contains a cleaner funcion. 
+
+Cleaner is a function that sets all leds from the matrices \char`\"{}off\char`\"{}. Puts every register on 0x00. ~\newline
+The way this is done is a counter from 0 to count. ~\newline
+So this is only reuseable when registers are numberd from 0 to count. ~\newline
+ 
+
+\subsection{Member Function Documentation}
+\index{clean@{clean}!cleaner@{cleaner}}
+\index{cleaner@{cleaner}!clean@{clean}}
+\subsubsection[{\texorpdfstring{cleaner()}{cleaner()}}]{\setlength{\rightskip}{0pt plus 5cm}void clean\+::cleaner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classclean_a9c834bca386f25dc1a9ccbbc0a8835a8}{}\label{classclean_a9c834bca386f25dc1a9ccbbc0a8835a8}
+-\/number\+\_\+of\+\_\+matrices\+: number of martices you want to clean. ~\newline
+-\/count\+: number of rows you want to clean on all the matrices. ~\newline
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+clean.\+hpp\end{DoxyCompactItemize}

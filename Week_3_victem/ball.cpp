@@ -1,5 +1,6 @@
 #include "ball.hpp"
 #include <iostream>
+#include "stdio.h"
 
 void ball::update(){
    location += speed;
@@ -15,6 +16,8 @@ void ball::interact( drawable & other ){
       if( overlaps( other )){
          speed.x *= other.d.x;
          speed.y *= other.d.y;
+         static int i = 1;
+          printf("Ball: Stuiter nummer %d\n", i++);
       }
    }
 }

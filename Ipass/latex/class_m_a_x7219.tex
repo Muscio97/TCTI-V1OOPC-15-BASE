@@ -1,0 +1,108 @@
+\hypertarget{class_m_a_x7219}{}\section{M\+A\+X7219 Class Reference}
+\label{class_m_a_x7219}\index{M\+A\+X7219@{M\+A\+X7219}}
+
+
+This is a storage for\+:  
+
+
+
+
+{\ttfamily \#include $<$M\+A\+X7219.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries M\+A\+X7219} (hwlib\+::spi\+\_\+bus \&bus, hwlib\+::pin\+\_\+out \&cs)\hypertarget{class_m_a_x7219_a624c96ba355adf98508467ff5ba1231c}{}\label{class_m_a_x7219_a624c96ba355adf98508467ff5ba1231c}
+
+\item 
+void \hyperlink{class_m_a_x7219_ac71364c86fbc0e9ab520c751dfe3aef0}{command\+\_\+settings} (const byte data\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, int number\+\_\+of\+\_\+matrices, int count)
+\item 
+void \hyperlink{class_m_a_x7219_a22dc3d4ba386b338de95d622c39e7158}{render} (byte render\+\_\+input\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int time, int mode, int inverd, int rotation, int number\+\_\+of\+\_\+matrices, int count, int string\+\_\+lenght)
+\item 
+void \hyperlink{class_m_a_x7219_ab6289ee1c88108080083b26cd1b54579}{tester} (int mode, int number\+\_\+of\+\_\+matrices, int count, int string\+\_\+lenght)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a storage for\+: 
+
+This class holds all supported charactres, test modes, render, setiings and the sting to dislpay tekst switch. ~\newline
+The characters are all 8x8 (byte)matrices. ~\newline
+Test mode is a mode to test the matrix, it will display every currunt supported charchter. rotated and sometimes inverded. ~\newline
+Render makes a copy of the orignal 8x8 (byte)matrix, sends that to \hyperlink{classmbin__to__mhex}{mbin\+\_\+to\+\_\+mhex}. \hyperlink{classmbin__to__mhex}{mbin\+\_\+to\+\_\+mhex} will process that in a 8x2 (byte)matrix. ~\newline
+Render will take that 8x2 (byte)martix and put it in a ?x8x2 (byte)matrix. When all charachters are put in the ?x8x2 (byte)matrix ~\newline
+render will send it to \hyperlink{classcommand}{command()}. Settings is a ?x2 matrix of settings. The switch take a input string and with every supported it will call render with the there to belonning character. 
+
+\subsection{Member Function Documentation}
+\index{M\+A\+X7219@{M\+A\+X7219}!command\+\_\+settings@{command\+\_\+settings}}
+\index{command\+\_\+settings@{command\+\_\+settings}!M\+A\+X7219@{M\+A\+X7219}}
+\subsubsection[{\texorpdfstring{command\+\_\+settings(const byte data[][2], int number\+\_\+of\+\_\+matrices, int count)}{command_settings(const byte data[][2], int number_of_matrices, int count)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+A\+X7219\+::command\+\_\+settings (
+\begin{DoxyParamCaption}
+\item[{const byte}]{data\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}, }
+\item[{int}]{number\+\_\+of\+\_\+matrices, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_m_a_x7219_ac71364c86fbc0e9ab520c751dfe3aef0}{}\label{class_m_a_x7219_ac71364c86fbc0e9ab520c751dfe3aef0}
+Executing function, data\mbox{[}\mbox{]}\mbox{[}2\mbox{]}\+: is the filled with hex codes that coronspond to registers of \hyperlink{class_m_a_x7219}{M\+A\+X7219}. ~\newline
+~\newline
+Count\+: is number off row that will be dysplayed. This is over thought choise. This gives more options. ~\newline
+The function will send its data via S\+P\+I(write\+\_\+and\+\_\+read) to the \hyperlink{class_m_a_x7219}{M\+A\+X7219}. ~\newline
+ \index{M\+A\+X7219@{M\+A\+X7219}!render@{render}}
+\index{render@{render}!M\+A\+X7219@{M\+A\+X7219}}
+\subsubsection[{\texorpdfstring{render(byte render\+\_\+input[8][8], int time, int mode, int inverd, int rotation, int number\+\_\+of\+\_\+matrices, int count, int string\+\_\+lenght)}{render(byte render_input[8][8], int time, int mode, int inverd, int rotation, int number_of_matrices, int count, int string_lenght)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+A\+X7219\+::render (
+\begin{DoxyParamCaption}
+\item[{byte}]{render\+\_\+input\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, }
+\item[{int}]{time, }
+\item[{int}]{mode, }
+\item[{int}]{inverd, }
+\item[{int}]{rotation, }
+\item[{int}]{number\+\_\+of\+\_\+matrices, }
+\item[{int}]{count, }
+\item[{int}]{string\+\_\+lenght}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_m_a_x7219_a22dc3d4ba386b338de95d622c39e7158}{}\label{class_m_a_x7219_a22dc3d4ba386b338de95d622c39e7158}
+Render is a function that puts the to be displayed string, in to a format that command understands. ~\newline
+Array\+\_\+data is where the data is stored in. Array\+\_\+data\mbox{[}number of chars\mbox{]}\mbox{[}count\mbox{]}\mbox{[}2\mbox{]}. ~\newline
+~\newline
+-\/render\+\_\+input is the data that will be displayed on the matrix. ~\newline
+-\/time is the time(in ms) that the matrix will be displayed. ~\newline
+-\/mode is the modes the matrix will be dysplayed in. ~\newline
+-\/inverd is whether the data is inverder or not. 0 is off, !0 is on. ~\newline
+-\/rotation is the number of times render\+\_\+input will be rotated 90 degeers. ~\newline
+-\/number\+\_\+of\+\_\+matrices the number of matrices where you want to display on. ~\newline
+-\/count number of size of martix in pixels. ~\newline
+-\/string\+\_\+lenght the lenght of the string you want to display. ~\newline
+ ~\newline
+ Modes\+:
+\begin{DoxyEnumerate}
+\item flashing
+\item shifting right to left
+\item shifting left to right 
+\end{DoxyEnumerate}\index{M\+A\+X7219@{M\+A\+X7219}!tester@{tester}}
+\index{tester@{tester}!M\+A\+X7219@{M\+A\+X7219}}
+\subsubsection[{\texorpdfstring{tester(int mode, int number\+\_\+of\+\_\+matrices, int count, int string\+\_\+lenght)}{tester(int mode, int number_of_matrices, int count, int string_lenght)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+A\+X7219\+::tester (
+\begin{DoxyParamCaption}
+\item[{int}]{mode, }
+\item[{int}]{number\+\_\+of\+\_\+matrices, }
+\item[{int}]{count, }
+\item[{int}]{string\+\_\+lenght}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_m_a_x7219_ab6289ee1c88108080083b26cd1b54579}{}\label{class_m_a_x7219_ab6289ee1c88108080083b26cd1b54579}
+Tester s a function that tests the matrix. ~\newline
+It will display every suported character. In different time, inverd and rotation.~\newline
+~\newline
+-\/mode is the modes the matrix will be dysplayed in. ~\newline
+-\/number\+\_\+of\+\_\+matrices the number of matrices where you want to display on. ~\newline
+-\/count number of size of martix in pixels. ~\newline
+-\/string\+\_\+lenght the lenght of the string you want to display. ~\newline
+ ~\newline
+ Modes\+:
+\begin{DoxyEnumerate}
+\item flashing
+\item shifting right to left
+\item shifting left to right 
+\end{DoxyEnumerate}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+M\+A\+X7219.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+/**
+\mainpage The mainpage documentation
+
+This is a libary for contorling matrices wtih a MAX7219 chip. \n
+It usses its onw list of characters. Its made with 8x8 matrices. \n
+Characteristics: \n
+-Text input.	\n				
+-Adjustable display time. \n
+-Adjustable rotation. \n
+-Adjustable invers display. \n
+-Support for multiple matrices. \n
+-Support for 55 characters. \n
+-3 movement modes:		\n	
+         1.flashing.					\n
+         2.shifting from left to right. \n
+         3.shifting from right to left. 	\n
+
+*/

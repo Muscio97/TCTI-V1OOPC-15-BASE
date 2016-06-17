@@ -1,0 +1,73 @@
+\hypertarget{classrotate}{}\section{rotate Class Reference}
+\label{classrotate}\index{rotate@{rotate}}
+
+
+Rotate contains a rotator function.  
+
+
+
+
+{\ttfamily \#include $<$rotate.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries rotate} (byte($\ast$matrix)\mbox{[}8\mbox{]}, int rotation, int count)\hypertarget{classrotate_ac9d9d20555e6d977364ec3dae0557f27}{}\label{classrotate_ac9d9d20555e6d977364ec3dae0557f27}
+
+\item 
+void \hyperlink{classrotate_a5512656d0755859c8c6c42e1e3a31275}{rotate\+\_\+matrix} ()
+\item 
+void \hyperlink{classrotate_a86248981f73105b3c5e968c17ee94e57}{rotator} (byte \&a, byte \&b, byte \&c, byte \&d)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Rotate contains a rotator function. 
+
+Rotate is a function that rotates a matrix. The size of the matrix can devined wtih count. ~\newline
+Count is number of rows and columns. This is because of the way the fucntion works. ~\newline
+ \hyperlink{classrotate_a5512656d0755859c8c6c42e1e3a31275}{rotate\+\_\+matrix()} gives the to be rotated data to \hyperlink{classrotate_a86248981f73105b3c5e968c17ee94e57}{rotator()} ~\newline
+ ~\newline
+Example\+: matrix is 4x4, count 4. It takes (0,0),(3,0),(3,3),(0,3). Then it will rewrite this to\+: (3,0),(3,3),(0,3),(0,0. ~\newline
+Now it is rotated.\+next it takes (1,0),(2,0),(3,2),(1,3). Then it will rewrite this to\+: (2,0),(3,2),(1,3),(1,0). ~\newline
+Eventually it will have rotated the whole matrix. ~\newline
+ ~\newline
+The matrix it self will be altered, so i advise you to send a copy of your matrix to it. ~\newline
+ 
+
+\subsection{Member Function Documentation}
+\index{rotate@{rotate}!rotate\+\_\+matrix@{rotate\+\_\+matrix}}
+\index{rotate\+\_\+matrix@{rotate\+\_\+matrix}!rotate@{rotate}}
+\subsubsection[{\texorpdfstring{rotate\+\_\+matrix()}{rotate_matrix()}}]{\setlength{\rightskip}{0pt plus 5cm}void rotate\+::rotate\+\_\+matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrotate_a5512656d0755859c8c6c42e1e3a31275}{}\label{classrotate_a5512656d0755859c8c6c42e1e3a31275}
+Rotate is a function that rotates matrices, in steps of 90 degrees. ~\newline
+~\newline
+Varibles used in \hyperlink{classrotate_a5512656d0755859c8c6c42e1e3a31275}{rotate\+\_\+matrix()}\+: ~\newline
+-\/matrix\+: Input data, the matrix its self will be altered, expectation is a (byte)matrix\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}. ~\newline
+-\/rotation\+: Number of time you desire to rotate the matrix with 90 degrees. ~\newline
+-\/count\+: Size of matrix, this way you can rotate parts of the matrix. ~\newline
+ \index{rotate@{rotate}!rotator@{rotator}}
+\index{rotator@{rotator}!rotate@{rotate}}
+\subsubsection[{\texorpdfstring{rotator(byte \&a, byte \&b, byte \&c, byte \&d)}{rotator(byte &a, byte &b, byte &c, byte &d)}}]{\setlength{\rightskip}{0pt plus 5cm}void rotate\+::rotator (
+\begin{DoxyParamCaption}
+\item[{byte \&}]{a, }
+\item[{byte \&}]{b, }
+\item[{byte \&}]{c, }
+\item[{byte \&}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrotate_a86248981f73105b3c5e968c17ee94e57}{}\label{classrotate_a86248981f73105b3c5e968c17ee94e57}
+Rotator is a function that rotates teh data given by rotate. ~\newline
+ ~\newline
+varibles used in \hyperlink{classrotate_a86248981f73105b3c5e968c17ee94e57}{rotator()}\+: ~\newline
+-\/a will become b. ~\newline
+-\/b will become c. ~\newline
+-\/c will become d. ~\newline
+-\/d will become a. ~\newline
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+rotate.\+hpp\end{DoxyCompactItemize}

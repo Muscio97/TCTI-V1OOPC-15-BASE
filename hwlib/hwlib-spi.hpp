@@ -144,13 +144,13 @@ public:
           for( int j = 0; j < 8; ++j ){
               mosi.set( ( d & 0x80 ) != 0 );
               wait_half_period();
-              sclk.set( 1 );
+              sclk.set( 0 );
               wait_half_period();
               d = d << 1;
               if( miso.get() ){
                  d |= 0x01;
               }
-              sclk.set( 0 );              
+              sclk.set( 1 );              
           }
           
           if( data_in != nullptr ){
@@ -158,7 +158,10 @@ public:
           }
       }      
       wait_half_period();
-      sel.set( 1 );
+            sclk.set( 0 ); 
+                     //omdraaien
+      wait_half_period();
+            sel.set( 1 );     //omdraaien
       wait_half_period();
    }      
    

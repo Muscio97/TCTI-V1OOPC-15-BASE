@@ -432,6 +432,12 @@
       <Project Name="21-05-mirror" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
+  <Project Name="Ipass" Path="Ipass/_codelite.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Ipass" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
   <Project Name="Opdracht_1_1" Path="Opdracht_1_1/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
@@ -448,6 +454,12 @@
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Opdracht_4_2" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Test" Path="Test/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Test" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
   <Project Name="Week_2_vector" Path="Week_2_vector/_codelite.project" Active="No"/>
@@ -468,10 +480,34 @@
       <Project Name="Week_3_muur" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="Week_3_victim" Path="Week_3_victem/_codelite.project" Active="Yes"/>
+  <Project Name="Week_3_victem" Path="Week_3_victem/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Week_3_victem" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Week_4_22_2" Path="Week_4_22_2/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Week_4_22_2" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Week_4_22_3" Path="Week_4_22_3/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Week_4_22_3" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Week_4_22_4" Path="Week_4_22_4/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Week_4_22_4" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Week_4_22_5" Path="Week_4_22_5/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Week_4_22_5" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

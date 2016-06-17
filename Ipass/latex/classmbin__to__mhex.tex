@@ -1,0 +1,51 @@
+\hypertarget{classmbin__to__mhex}{}\section{mbin\+\_\+to\+\_\+mhex Class Reference}
+\label{classmbin__to__mhex}\index{mbin\+\_\+to\+\_\+mhex@{mbin\+\_\+to\+\_\+mhex}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmbin__to__mhex_a1d8f96e062949e4b93962c1ba55862aa}{mbin\+\_\+to\+\_\+mhex} (byte($\ast$matrix)\mbox{[}8\mbox{]}, byte($\ast$matrix\+\_\+data)\mbox{[}2\mbox{]}, int inverd=0)
+\begin{DoxyCompactList}\small\item\em converter this function translates an 8x8 matrix in an 8x2 matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classmbin__to__mhex_a456116c8555eac64dab1f71fc98ddbe0}{coverter} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mbin\+\_\+to\+\_\+mhex@{mbin\+\_\+to\+\_\+mhex}!mbin\+\_\+to\+\_\+mhex@{mbin\+\_\+to\+\_\+mhex}}
+\index{mbin\+\_\+to\+\_\+mhex@{mbin\+\_\+to\+\_\+mhex}!mbin\+\_\+to\+\_\+mhex@{mbin\+\_\+to\+\_\+mhex}}
+\subsubsection[{\texorpdfstring{mbin\+\_\+to\+\_\+mhex(byte($\ast$matrix)[8], byte($\ast$matrix\+\_\+data)[2], int inverd=0)}{mbin_to_mhex(byte(*matrix)[8], byte(*matrix_data)[2], int inverd=0)}}]{\setlength{\rightskip}{0pt plus 5cm}mbin\+\_\+to\+\_\+mhex\+::mbin\+\_\+to\+\_\+mhex (
+\begin{DoxyParamCaption}
+\item[{byte($\ast$)}]{matrix\mbox{[}8\mbox{]}, }
+\item[{byte($\ast$)}]{matrix\+\_\+data\mbox{[}2\mbox{]}, }
+\item[{int}]{inverd = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbin__to__mhex_a1d8f96e062949e4b93962c1ba55862aa}{}\label{classmbin__to__mhex_a1d8f96e062949e4b93962c1ba55862aa}
+
+
+converter this function translates an 8x8 matrix in an 8x2 matrix. 
+
+Input is 8x8 byte matrix. It\textquotesingle{}s data is shifted in to a byte per row. ~\newline
+This way you make from 64 bits, 8 bytes. This is easyer to read out. ~\newline
+Now theres added register data, so reading this matrix out will give you, the data to write and the register to write to. ~\newline
+The way its gets written in to the matrix is that ($\ast$matrix)\mbox{[}0\mbox{]}is the rigster adress and ($\ast$matrix)\mbox{[}1\mbox{]} is the data. ~\newline
+ this makes it reuseble you can ignore the first adress and only use the data, then pare it ypu self to other adresses. ~\newline
+ 
+
+\subsection{Member Function Documentation}
+\index{mbin\+\_\+to\+\_\+mhex@{mbin\+\_\+to\+\_\+mhex}!coverter@{coverter}}
+\index{coverter@{coverter}!mbin\+\_\+to\+\_\+mhex@{mbin\+\_\+to\+\_\+mhex}}
+\subsubsection[{\texorpdfstring{coverter()}{coverter()}}]{\setlength{\rightskip}{0pt plus 5cm}void mbin\+\_\+to\+\_\+mhex\+::coverter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbin__to__mhex_a456116c8555eac64dab1f71fc98ddbe0}{}\label{classmbin__to__mhex_a456116c8555eac64dab1f71fc98ddbe0}
+-\/matrix input data. ~\newline
+-\/matrix\+\_\+data output data. ~\newline
+-\/inverd, werther you want the matrix\+\_\+data be filled with normal or invered data. ~\newline
+ ~\newline
+This function uses bitwise oparations to set a row from a matrix in to a tmp. ~\newline
+The first number put in to matrix\+\_\+data is the row number, second value is the column data. ~\newline
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mbin\+\_\+to\+\_\+mhex.\+hpp\end{DoxyCompactItemize}

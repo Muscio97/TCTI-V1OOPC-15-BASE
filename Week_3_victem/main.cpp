@@ -24,7 +24,7 @@ int main(){
          p->draw();
           //printf("test\n");
       }
-      wait_ms( 200 );
+      wait_ms( 1 );
       for( auto & p : objects ){
           p->update();
       }
