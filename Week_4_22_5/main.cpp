@@ -4,15 +4,15 @@
 int main(void){
   namespace target = hwlib::target;
 
-   auto ds   = target::pin_out( target::pins::d30 );
-   auto shcp = target::pin_out( target::pins::d28 );
-   auto stcp = target::pin_out( target::pins::d26 );
+   auto ds   = target::pin_out( target::pins::d7 );
+   auto shcp = target::pin_out( target::pins::d6 );
+   auto stcp = target::pin_out( target::pins::d5 );
    auto spi  = hwlib::spi_bus_bit_banged_sclk_mosi_miso( 
-      stcp, 
+      shcp, 
       ds, 
       hwlib::pin_in_dummy 
    );
-    auto leds = hwlib::hc595( spi, shcp );
+    auto leds = hwlib::hc595( spi, stcp );
 
     auto led0 = target::pin_in_out( target::pins::d8 );
     auto led1 = target::pin_in_out( target::pins::d9 );
@@ -34,8 +34,8 @@ int main(void){
     {
     pin_decorator test(pin0, pin1);
     
-    hwlib::cout << test.get();
-    
+    hwlib::cout <<hwlib::hex << test.get();
+    hwlib::wait_ms(100);
     }
    int x = 0; 
    
@@ -64,9 +64,9 @@ int main(void){
       if(x>=3){led2.set( 1 );}
       if(x>=4){led3.set( 1 );}
       if(x==5){leds.set( 0b00010001 );}
-      if(x==6){leds.set( 0b00100010 );}
-      if(x==7){leds.set( 0b01000100 );}
-      if(x==8){leds.set( 0b10001000 );}
+      if(x==6){leds.set( 0b00110011 );}
+      if(x==7){leds.set( 0b01110111 );}
+      if(x==8){leds.set( 0b11111111 );}
       
       if(x<1){led0.set( 0 );}
       if(x<2){led1.set( 0 );}

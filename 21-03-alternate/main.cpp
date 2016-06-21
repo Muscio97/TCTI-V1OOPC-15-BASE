@@ -42,10 +42,10 @@ int main( void ){
    
    namespace target = hwlib::target;
    
-   auto led0     = target::pin_out( target::pins::d7 );
-   auto led1     = target::pin_out( target::pins::d6 );
-   auto led2_pin = target::pin_out( target::pins::d5 );
-   auto led3_pin = target::pin_out( target::pins::d4 );
+   auto led0     = target::pin_out( target::pins::d8 );
+   auto led1     = target::pin_out( target::pins::d9 );
+   auto led2_pin = target::pin_out( target::pins::d10 );
+   auto led3_pin = target::pin_out( target::pins::d11 );
    
    auto led2     = pin_out_invert( led2_pin );
    auto led3     = pin_out_invert( led3_pin );

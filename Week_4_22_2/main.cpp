@@ -1,11 +1,3 @@
-// ==========================================================================
-//
-// blink a led on PIOB pin 27 == arduino-due on-board LED
-//
-// This file is in the public domain.
-//
-// ==========================================================================
-
 #include "hwlib.hpp"
 
 int main( void ){	
@@ -28,7 +20,7 @@ int main( void ){
        
       if(x>4){x=0;}
       hwlib::cout << hwlib::dec << (int)x;
-      hwlib::wait_ms(20);
+      hwlib::wait_ms(80);
       leds = 1 << x;
       led0.set( leds & 1 );
       led1.set( leds & 2 );

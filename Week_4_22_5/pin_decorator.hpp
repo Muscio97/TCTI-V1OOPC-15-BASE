@@ -6,25 +6,23 @@
 class pin_decorator: public hwlib::pin_in
 {
 private:
-auto pin1;
-auto pin2;
+    hwlib::target::pin_in_out & pin0;
+    hwlib::target::pin_in_out & pin1;
 
 public:
-pin_decorator( hwlib::pin_in & pin1, hwlib::pin_in & pin2):
-    pin1(pin1), pin2(pin2)
+    
+    pin_decorator(hwlib::target::pin_in_out & pin0, hwlib::target::pin_in_out & pin1):
+    pin0(pin0), pin1(pin1)
     {}
     
     bool get()
     {
-        
-        if( pin1.get() && pin2.get() == 1)
+        if( pin0.get() && pin1.get() == 1)
         {
            return 1;
         }
-        else
-        {   
-            return 0;
-        }
+        
+        return 0;
     }
 
 };

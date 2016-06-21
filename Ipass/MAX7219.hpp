@@ -165,15 +165,15 @@ public:
         hwlib::wait_ms(1000);       // Hammertime
         hwlib::cout << "=== BEGINING ===\n";
         
-        char input_string[] = {"|"};            // input string
+        char input_string[] = {"Hello world!!!"};            // input string
         hwlib::cout << "String lenght :" << strlen(input_string);   //lenght of string
         
-        number_of_matrices = 4;                                     //Amount of matrices where you want to display on.
+        number_of_matrices = 1;                                     //Amount of matrices where you want to display on.
         count = 8;                                                  //Amount of pixels on the matrix.
         rotation =  0;                                              //rotation 1=90, 2=180, 3=270, 4=360 etc.
         time = 500;                                                 //The time in ms that the characters will be displayed on the screen
         inverd = 0;                                                 //If inverded 0 = off, !0= on/
-        mode = 2;                                                   //The mode the characters will be displayed in
+        mode = 5;                                                   //The mode the characters will be displayed in
                                                                     // ============================================ //
                                                                     //  1. flashing                                 //
                                                                     //  2. shifting from left to right              //
@@ -186,7 +186,7 @@ public:
         byte data[][2] ={{ 0x09, 0x00 },    //
                          { 0x0c, 0x01 },    //
                          { 0x0f, 0x00 },    // Test modes : off
-                         { 0x0A, 0x05 },    // Intestety :  ~30% 
+                         { 0x0A, 0x0f },    // Intestety :  ~30% 
                          { 0x0B, 0x07 }};   //
         command_settings(data, number_of_matrices, 5);
         
