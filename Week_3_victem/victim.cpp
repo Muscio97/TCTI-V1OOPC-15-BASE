@@ -5,20 +5,22 @@
 
 victim::victim(window & w, vector location, vector end, vector d):
 rectangle(w, location, end, d)
-
-
 {}
 
 void victim::interact( drawable & other ){
-   if( this != & other){
-      if( overlaps( other )){
-          static int i = 1;
-          if(i==10)
-            {
-            printf("Victim: Verkleining zou nu klaar moeten zijn\n");
-           
-          }
-           else{printf("Victim: Verkleining nummer %d\n", i++);}        
+   if( this != & other)
+   {
+      if( overlaps( other ))
+      { 
+            if(location.x<=0){location.x = 0;}
+            else{location.x = location.x -10;}
+            if(location.y<=0){location.y =0;}
+            else{location.y = location.y -10;}
+            if(end.x<=0){end.x = 0;}
+            else{end.x = end.x -10;}
+            if(end.y<=0){end.y = 0;}
+            else{end.y = end.y -10;}
+            printf("location (%d, %d) end(%d, %d)\n", location.x, location.y, end.x, end.y);
       }
    }
 }

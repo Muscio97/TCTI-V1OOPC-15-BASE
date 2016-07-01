@@ -6,6 +6,7 @@
 
 
 int main(){
+    printf("Ik kan momenteel waardes aanpassen, maar ik victem niet aanpassen\nIk echo wat de waardes horen te zijn\n");
    int interval = 3;
    window w( vector( 128, 64 ), 2 );
    wall top( w, vector(   0,  0 ), vector( 127,  4 ), interval, vector(1, -1));

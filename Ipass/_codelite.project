@@ -31,6 +31,16 @@
   <VirtualDirectory Name="source">
     <File Name="main.cpp"/>
     <File Name="Makefile"/>
+    <File Name="clean.hpp"/>
+    <File Name="command.hpp"/>
+    <File Name="Doxyfile"/>
+    <File Name="dummy.hpp"/>
+    <File Name="main.dox"/>
+    <File Name="main.txt"/>
+    <File Name="MAX7219.cpp"/>
+    <File Name="MAX7219.hpp"/>
+    <File Name="mbin_to_mhex.hpp"/>
+    <File Name="rotate.hpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>
@@ -43,7 +53,7 @@
       <ResourceCompiler Options=""/>
     </GlobalSettings>
     <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-       <Compiler Options="-g;-O0;-std=c++11" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+      <Compiler Options="-g;-O0;-std=c++11" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
         <IncludePath Value=".;../Catch/include"/>
       </Compiler>
       <Linker Options="" Required="yes"/>
@@ -119,4 +129,4 @@
       </Completion>
     </Configuration>
   </Settings>
-</CodeLite_Project>   
+</CodeLite_Project>

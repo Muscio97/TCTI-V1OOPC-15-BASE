@@ -17,7 +17,7 @@ void ball::interact( drawable & other ){
          speed.x *= other.d.x;
          speed.y *= other.d.y;
          static int i = 1;
-          printf("Ball: Stuiter nummer %d\n", i++);
+          //printf("Ball: Stuiter nummer %d\n", i++);
       }
    }
 }
