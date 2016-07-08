@@ -16,6 +16,20 @@ private:
     int version;
     window & w;
 public:
+       rectangle    roof;
+       rectangle    headlight;
+       rectangle    backlight;
+       line         backglass_line;
+       line         frontglass_line;
+       rectangle    box;
+       circle       wheel1;
+       circle       wheel2;
+       circle       wheel3;
+       circle       wheel4;
+       circle       wheel1_rim;
+       circle       wheel2_rim;
+       circle       wheel3_rim;
+       circle       wheel4_rim;
 
     car( window & w, int version);
     void draw();

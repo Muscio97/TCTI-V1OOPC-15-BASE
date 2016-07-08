@@ -15,7 +15,7 @@ int main(int argc, char **argv){
    // 0 = normal wheels
    // 1 = tyres on wheels 
    
-   car car1( w, 1);
+   car car1( w, 0);
    car1.draw();
   
    

@@ -1,9 +1,7 @@
-Debug/victim.cpp.o: victim.cpp victim.hpp rectangle.hpp window.hpp \
- vector.hpp drawable.hpp line.hpp filled_rectangle.hpp
+Debug/victim.cpp.o: victim.cpp victim.hpp window.hpp vector.hpp \
+ drawable.hpp line.hpp
 
 victim.hpp:
-
-rectangle.hpp:
 
 window.hpp:
 
@@ -12,5 +10,3 @@ vector.hpp:
 drawable.hpp:
 
 line.hpp:
-
-filled_rectangle.hpp:

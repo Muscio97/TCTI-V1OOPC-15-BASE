@@ -6,12 +6,10 @@
 #include "vector.hpp"
 
 class drawable {
-protected:
+public:
    window w;
    vector location;
    vector size;
-   
-public:
    vector d;
    drawable( window & w, const vector & location, const vector & size, vector d = vector(1, 1)); 
    bool overlaps( const drawable & other );

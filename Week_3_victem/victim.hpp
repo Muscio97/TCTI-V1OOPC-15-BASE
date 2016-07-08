@@ -1,19 +1,24 @@
 #ifndef VICTIM_HPP
 #define VICTIM_HPP
-#include "rectangle.hpp"
+#include "window.hpp"
+#include "drawable.hpp"
 #include "vector.hpp"
-#include "stdbool.h"
-#include <iostream>
+#include "line.hpp"
 
 
-class victim : public rectangle
+class victim : public drawable
 {
-private:
-
-
+protected:
 public:
-    victim (window & w, vector location, vector  end, vector d);
+   vector end;
+   vector start;
+   line left;
+   line right;
+   line top;
+   line bottom;
+    victim (window & w, vector start, vector  end, vector d);
     void interact( drawable & other ) override;
+    void draw() override;
 
 };
 
